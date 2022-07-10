@@ -6,44 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisbon Meanders</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Shadows+Into+Light&family=Sonsie+One&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="#">Logo</a>
         <nav class="primary-nav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Tours</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </nav>
+            <a href="index.html">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="about.html">About Us</a>
+        </nav>
     </header>
     <main>
         <section class="top-splash">
             <div class="splash-container1">
-                <h1>This is Lisbon Meanders</h1>
-                <p>
-                    Accessible and fun tours, privately booked with people who want to put your interests first.
-                </p>
-                <img class="splash-img" src="" alt="This is an image placeholder">
+                <h1>Lisbon Meanders</h1>
+                <span>Walk with us for a local's perspective</span>
             </div>
-
+            
         </section>
         <section class="intentions">
-            <p>What we do</p>
-
+            <span>Accessible and fun tours, privately booked with people who want to put your interests first.
+            </span>
+            <img class="logo" src="resources/images/LM-logo.png" alt="Logo for company">
         </section>
         <section class="about-us">
-            <p>Who we are</p>
+            <h1>Who we are</h1>
+            <div class="gallery-shell">
+                <div class="gallery">
+                    <img src="resources/images/guide1.jpg" alt="Guide 1" width="200" height="auto">
+                    <div class="desc">The first guide we have working with us</div>
+                </div>
+                
+                <div class="gallery">
+                    <img src="resources/images/guide2.jpg" alt="Guide 2" width="200" height="auto">
+                    <div class="desc">The second guide we have working with us</div>
+                </div>
+                
+                <div class="gallery">
+                    <img src="resources/images/guide3.jpg" alt="Guide 3" width="200" height="auto">
+                    <div class="desc">The driver we have working with us</div>
+                </div>
+                
+                <div class="gallery">
+                    <img src="resources/images/guide4.jpg" alt="Guide 4" width="200" height="auto">
+                    <div class="desc">The coordinator we have working with us</div>
+                </div>
+            </div>    
         </section>
         <section class="join-us">
-            Signup today!
+            <div>
+                Signup today!
+                <input type="button" onclick="location.href='tours.html'" id="signup" value="signup">
+            </div>
         </section>
     </main>
     
     <footer>
-              <h1>Connect</h2>
-              <ul>
+              <h1 id="footh">Connect</h1>
+              <ul class="foot-list">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Email</a></li>
